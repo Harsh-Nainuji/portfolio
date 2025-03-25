@@ -5,16 +5,6 @@ Welcome to my portfolio project! This repository contains the source code for my
 
 ---
 
-
-## 🎨 Technologies Used
-
-- **Front-End:** HTML5, CSS3, Bootstrap 5, JavaScript (ES6), jQuery, AOS, Particles.js, Typed.js
-- **Back-End:** Node.js, Express.js
-- **Version Control:** Git & GitHub
-- **Other:** Responsive Web Design, REST APIs, Web3 Development, Blockchain Technology
-
----
-
 ## 🎨 Technologies Used
 
 - **Front-End:** HTML5, CSS3, Bootstrap 5, JavaScript (ES6)
