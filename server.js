@@ -9,9 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 /*
- * Set up middleware to serve static files.
- * Files in the following folders will be available via HTTP requests:
- *  - public: contains your HTML files (e.g., index.html)
+ * Set up middleware to serve static files. *  - public: contains your HTML files (e.g., index.html)
  *  - views: contains additional assets like CSS and JS files
  *  - images: contains image files
  */
@@ -20,7 +18,6 @@ app.use(express.static(path.join(__dirname, 'views')));
 app.use(express.static(path.join(__dirname, 'images')));
 
 /*
- * Catch-all route:
  * When a request is made to the root URL ('/'), 
  * serve the index.html file from the public folder.
  */
@@ -29,7 +26,6 @@ app.get('/', (req, res) => {
 });
 
 /*
- * Start the server and listen on the specified port.
  * Log a message to the console once the server is running.
  */
 app.listen(PORT, () => {
