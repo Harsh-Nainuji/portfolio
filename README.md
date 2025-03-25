@@ -1,6 +1,5 @@
 # Harsh Nainuji Portfolio
 
-![Portfolio Banner](https://media.giphy.com/media/26tPoyDhjiJ2g7rEs/giphy.gif)
 
 Welcome to my portfolio project! This repository contains the source code for my personal portfolio website built with **HTML**, **CSS**, **JavaScript**, **Node.js**, and **Express**. My portfolio showcases my skills in both front-end and back-end development, as well as my experiments with emerging technologies like blockchain and Web3 development.
 
