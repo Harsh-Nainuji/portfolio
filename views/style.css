@@ -1,0 +1,339 @@
+body {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Color Palette */
+:root {
+  /* Light Theme */
+  --bg-light: #FAB12F;         
+  --text-light: #131010;       
+  --accent-light: #ffe100;
+  --secondary-light: #2A3663;
+  --card: #ffffff; 
+  --font: #fdffa1;
+  --secondary-bg: #ff6a00;
+  --nav-bg-light: rgba(247,243,233,0.95);
+  
+  /* Dark Theme remains unchanged */
+  --bg-dark: #001B44;
+  --text-dark: #f2f6f9;
+  --accent-dark: #8fd5ee;
+  --secondary-dark: #4a90e2;
+  --nav-bg-dark: rgba(0,27,68,0.95);
+}
+
+/* Light Theme Styles */
+body.light {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+/* Dark Theme Styles */
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+h1, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  text-shadow: 0 0 10px var(--font);
+}
+
+/* h2 for light theme */
+h2.body.light {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(247, 189, 250);
+  text-shadow: 0 0 10px var(--font);
+}
+
+/* General h2 styling */
+h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: 0 0 10px var(--font);
+}
+
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 0 0 10px var(--font);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--nav-bg-light);
+  transition: background-color 0.5s;
+}
+body.dark .navbar {
+  background-color: var(--nav-bg-dark);
+}
+.navbar-brand, .nav-link {
+  font-weight: 600;
+}
+body.dark .navbar .navbar-brand,
+body.dark .navbar .nav-link {
+  color: var(--text-dark) !important;
+}
+
+/* Particle Background */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  top: 0;
+  left: 0;
+}
+
+/* Hero Section */
+/* Light theme uses earthy pastel colors; dark theme is nevy blue, both to match my images */
+header#home {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(270deg, var(--accent-light), var(--secondary-bg), var(--bg-light));
+  background-size: 600% 600%;
+  animation: gradientAnimation 15s ease infinite;
+}
+body.dark header#home {
+  background: linear-gradient(270deg, var(--accent-dark), var(--secondary-dark), var(--bg-dark));
+  background-size: 600% 600%;
+  animation: gradientAnimation 15s ease infinite;
+}
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Animated Heading */
+.animated-heading {
+  text-shadow: 2px 2px 10px var(--secondary-light);
+  animation: fadeSlideIn 1s forwards;
+}
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Typed Text */
+.typed-text {
+  font-size: 1.5rem;
+  color: var(--accent-light);
+}
+body.dark .typed-text {
+  color: var(--accent-dark);
+}
+
+/* Photo Placeholder */
+.photo-placeholder {
+  width: 300px;
+  height: 300px;
+  border: 6px solid var(--accent-light);
+  border-radius: 50%;
+  overflow: hidden;
+  transition: border-color 0.5s, box-shadow 0.5s;
+  box-shadow: 0 0 20px var(--secondary-light);
+  position: relative;
+}
+body.dark .photo-placeholder {
+  border: 6px solid var(--accent-dark);
+  box-shadow: 0 0 20px var(--secondary-dark);
+}
+
+/* Adjust image size and zoom (object-fit covers and slight overflow for zoom) */
+.photo-placeholder img {
+  width: 330px;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 50%;
+}
+
+.img-light {
+  display: block;
+}
+
+.img-dark {
+  display: none;
+}
+
+body.dark .img-light {
+  display: none;
+}
+
+body.dark .img-dark {
+  display: block;
+}
+
+/* Floating Shapes in Hero Section */
+.floating-shape {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: float 12s ease-in-out infinite;
+  z-index: -5;
+}
+
+
+.shape1 {
+  width: 80px;
+  height: 80px;
+  top: 10%;
+  left: 15%;
+  animation-duration: 12s;
+}
+.shape2 {
+  width: 120px;
+  height: 120px;
+  top: 40%;
+  left: 70%;
+  animation-duration: 15s;
+}
+.shape3 {
+  width: 60px;
+  height: 60px;
+  top: 75%;
+  left: 25%;
+  animation-duration: 10s;
+}
+.shape4 {
+  width: 100px;
+  height: 100px;
+  top: 20%;
+  left: 80%;
+  animation-duration: 14s;
+}
+.shape5 {
+  width: 80px;
+  height: 80px;
+  top: 15%;
+  left: 25%;
+  right: 20%;
+  animation-duration: 11s;
+}
+.shape6 {
+  width: 120px;
+  height: 120px;
+  top: 60%;
+  left: 30%;
+  right: 25%;
+  animation-duration: 14s;
+}
+.shape7 {
+  width: 60px;
+  height: 60px;
+  top: 40%;
+  left: 25%;
+  right: 55%;
+  animation-duration: 10s;
+}
+.shape8 {
+  width: 100px;
+  height: 100px;
+  top: 80%;
+  left: 40%;
+  right: 80%S;
+  border-radius: 50%;
+  animation-duration: 14s;
+}
+
+
+/* Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
+}
+
+/* Portfolio Cards */
+.portfolio-card {
+  transition: transform 0.5s, box-shadow 0.5s;
+  border: none;
+}
+.portfolio-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 20px var(--card);
+}
+
+/* Footer */
+footer {
+  background-color: var(--nav-bg-light);
+}
+body.dark footer {
+  background-color: var(--nav-bg-dark);
+}
+
+/* Button Styling */
+.btn-outline-light {
+  border-color: var(--card);
+  color: var(--accent-light);
+  transition: background-color 0.5s, color 0.5s;
+}
+body.dark .btn-outline-light {
+  border-color: var(--accent-dark);
+  color: var(--accent-dark);
+}
+
+body.dark #contact .btn {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: var(--bg-dark);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .animated-heading {
+    font-size: 2.5rem;
+  }
+  .typed-text {
+    font-size: 1.2rem;
+  }
+  .photo-placeholder {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Skills Section Styling */
+#skills {
+  background: rgba(255, 255, 255, 0.7); /* Light background with slight transparency */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.skills-card {
+  border: none;
+  border-radius: 10px;
+  background: #ffffff73;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skills-card .card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#skills ul li {
+  margin-bottom: 0.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harsh Nainuji - Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Geist:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+FR+Moderne+Guides&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="light">
+  <div id="particles-js"></div>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#">Harsh Nainuji</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item">
+            <button id="theme-toggle" class="btn btn-warning ms-3">
+              <i class="bi bi-sun-fill"></i>
+              <i class="bi bi-moon-fill d-none"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section with Animated Gradient Background and Floating Shapes -->
+  <header id="home" class="section d-flex align-items-center" data-aos="fade-in">
+    <div class="container text-center position-relative">
+      
+      <div class="floating-shape shape1"></div>
+      <div class="floating-shape shape2"></div>
+      <div class="floating-shape shape3"></div>
+      <div class="floating-shape shape4"></div>
+      <div class="floating-shape shape5"></div>
+      <div class="floating-shape shape6"></div>
+      <div class="floating-shape shape7"></div>
+      <div class="floating-shape shape8"></div>
+      
+      <h1 class="display-3 animated-heading">Hello, I'm Harsh Nainuji</h1>
+      <h2 class="typed-text"></h2>
+      <div class="photo-placeholder rounded-circle mx-auto my-4">
+        <img src="/images/Untitled design.png" alt="Your Photo Light" class="img-fluid img-light">
+        <img src="/images/2.jpeg" alt="Your Photo Dark" class="img-fluid img-dark">
+      </div>
+    </div>
+  </header>
+  
+  <!-- About Section -->
+  <section id="about" class="section py-5" data-aos="fade-right">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="mt-3">
+        <p>
+          In the quiet solitude of my creative world, I transform abstract ideas into digital masterpieces. As a lone artisan of code and design, I thrive away from the noise, channeling my inner vision to craft experiences that are both mysterious and mesmerizing. Every project is a personal journey—where the silence fuels innovation, and each line of code is a step toward a unique, captivating narrative.
+        </p>
+        <p>
+          Every project is a journey—a delicate balance between technical precision and artistic expression. I pour my heart into each line of code and every design decision, ensuring that the final creation is both intuitive and immersive. Whether it’s a sleek, modern interface or an intricately detailed layout, I strive to create experiences that resonate on a personal level.
+        </p>
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+<section id="skills" class="section py-5" data-aos="fade-up">
+  <div class="container text-center">
+    <h2>My Skills</h2>
+    <p class="lead mt-3">
+      I blend creativity with technical expertise to build robust web applications and explore cutting‐edge blockchain technology. Here’s a snapshot of my skill set:
+    </p>
+    <div class="row g-4 mt-4">
+      <!-- Front-End Development Card -->
+      <div class="col-md-4">
+        <div class="card skills-card h-100">
+          <div class="card-body">
+            <h4 class="card-title">Front-End Development</h4>
+            <ul class="list-unstyled mt-3">
+              <li>React.js & Next.js</li>
+              <li>HTML5 & CSS3</li>
+              <li>Flexbox & Grid</li>
+              <li>Bootstrap 5</li>
+              <li>Javascript ES6, DOM Manipulation, jQuery</li>
+              <li>Web Design & Deployment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Back-End & DevOps Card -->
+      <div class="col-md-4">
+        <div class="card skills-card h-100">
+          <div class="card-body">
+            <h4 class="card-title">Back-End & DevOps</h4>
+            <ul class="list-unstyled mt-3">
+              <li>Node.js, Express.js, EJS</li>
+              <li>NPM & Bash Command Line</li>
+              <li>Git, GitHub & Version Control</li>
+              <li>REST & API Integration</li>
+              <li>SQL & PostgreSQL</li>
+              <li>Authentication</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Emerging Tech & Blockchain Card -->
+      <div class="col-md-4">
+        <div class="card skills-card h-100">
+          <div class="card-body">
+            <h4 class="card-title">Emerging Tech & Blockchain</h4>
+            <ul class="list-unstyled mt-3">
+              <li>MongoDB</li>
+              <li>Web3 Development on the Internet Computer</li>
+              <li>Blockchain Technology</li>
+              <li>Token Contract Development</li>
+              <li>NFT Minting, Buying & Selling Logic</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section py-5" data-aos="fade-left">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="row g-4 mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="flip-left">
+          <div class="card portfolio-card">
+            <img src="/images/child.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Child care hospital</h5>
+              <p class="card-text">A full stack child care hospital website, made with an admin panel to update staff and view appointments.</p>
+              <button type="button" class="btn btn-primary">
+                <a href="https://github.com/Harsh-Nainuji/Child-Hospital-Website" style="color: aliceblue;">Github repo</a>
+              </button><br>
+              <a href="https://www.linkedin.com/posts/harshnainuji_webdevelopment-internshipproject-coding-activity-7297331447965626368-6BQy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEAHizkBtC7eie3-8IrpmpvKkpckcgW9dV4">Linkedin post of project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="200">
+          <div class="card portfolio-card">
+            <img src="/images/styli.png" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Stylish Tailor shope</h5>
+              <p class="card-text">A full stack website for a stylish tailor shop, featuring an admin panel and database to store images, products, and details.</p>
+              <button type="button" class="btn btn-primary">
+                <a href="https://github.com/Harsh-Nainuji/TImelss-style-First-Full-stack-" style="color: aliceblue;">Github repo</a>
+              </button><br>
+              <a href="https://www.linkedin.com/posts/harshnainuji_my-first-full-stack-project-as-elementry-activity-7289262376875360256-35L-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEAHizkBtC7eie3-8IrpmpvKkpckcgW9dV4">Linkedin post of project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="flip-left">
+          <div class="card portfolio-card">
+            <img src="/images/jungle.png" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">A Traveling Agency</h5>
+              <p class="card-text">A beautiful traveling agency website with different travel packs.</p>
+              <button type="button" class="btn btn-primary">
+                <a href="https://github.com/Harsh-Nainuji/Traveling-agency-" style="color: aliceblue;">Github repo</a>
+              </button><br>
+              <a href="https://www.linkedin.com/in/harshnainuji/details/projects/">Project on linkedin</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="flip-left">
+          <div class="card portfolio-card">
+            <img src="/images/move.png" class="card-img-top" alt="Project 4">
+            <div class="card-body">
+              <h5 class="card-title">A Moving Company frontpage</h5>
+              <p class="card-text">A simple yet elegant frontpage for a moving company.</p>
+              <button type="button" class="btn btn-primary">
+                <a href="https://github.com/Harsh-Nainuji/moving-website-" style="color: aliceblue;">Github repo</a>
+              </button><br>
+              <a href="https://www.linkedin.com/in/harshnainuji/details/projects/">Project on linkedin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+<section id="contact" class="section py-5" data-aos="fade-up">
+  <div class="container text-center">
+    <h2>Get In Touch</h2>
+    <p class="mt-3">
+      I'm always excited to connect and collaborate on innovative projects. Whether you have a question, a fresh idea, or just want to say hello, feel free to drop me a message. Let's spark a conversation and create something amazing together!
+    </p>
+    <div class="d-flex justify-content-center gap-3 mt-4">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nainujiharsh@gmail.com" class="btn btn-outline-light" target="_blank">Email Me</a>
+
+      <a href="https://www.linkedin.com/in/harshnainuji/" target="_blank" class="btn btn-outline-light">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+  
+  <!-- Footer -->
+  <footer class="py-4" data-aos="fade-up">
+    <div class="container text-center">
+      <p>&copy; 2025 Harsh Nainuji. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- Custom JS -->
+  <script src="/script.js"></script>
+</body>
+</html>
